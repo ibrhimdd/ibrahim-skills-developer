@@ -130,3 +130,23 @@ This section tracks useful external collections and selected resources without m
 4. Do not add EdgeOne-specific deployment or storage requirements to projects that use another host or database.
 5. Keep source links, license details, and attribution requirements with every adopted resource.
 6. The complete 50-entry source index is maintained separately; entries are not all verified installable packages.
+
+### Unslop — AI UI design refinement
+
+- **Category:** Agent Skill — UI/UX audit and visual refinement workflow.
+- **Official repository:** https://github.com/heydamir/unslop
+- **Skill file:** https://github.com/heydamir/unslop/blob/main/skills/unslop/SKILL.md
+- **Purpose:** Audits AI-generated or generic-looking interfaces, identifies visual issues, proposes a product-specific design direction, and refines the screen in ordered passes.
+- **Supported agents documented by source:** Claude Code, OpenAI Codex, and Google Antigravity.
+- **Supported UI stacks stated by source:** Next.js, React, Vue, Svelte, Tailwind, plain HTML and CSS. It can also inspect a live site from a URL.
+- **Workflow:** Audit first; classify the needed change (full redesign, light polish, or no redesign); present the proposed direction and wait for approval before editing; apply ordered refinement passes; render and check the result.
+- **Installation — Codex:** `$skill-installer install https://github.com/heydamir/unslop/tree/main/skills/unslop`
+- **Installation — Claude Code:** Clone the repository and copy `skills/unslop` into `~/.claude/skills/`; for one project, use `.claude/skills/` in that project.
+- **Installation — Google Antigravity:** Copy `skills/unslop` into `~/.gemini/antigravity/skills/`; for one project, the source README also documents `.agents/skills/`.
+- **Optional screenshot/story-video prerequisites:** Playwright + Chromium; ffmpeg is additionally required for story videos.
+- **License:** CC BY 4.0. Preserve credit to Damir Sokolovsky (@heydamir) and link to the original repository when reusing or adapting it.
+- **Compatibility notes:** This is an agent workflow, not a UI component library or automatic site plugin. It can guide changes in PHP-rendered HTML/CSS, but framework-specific instructions and scripts must be checked before use. It does not install itself into ChatGPT automatically.
+- **Adoption status:** Added to Ibrahim's reference library; not installed or executed in any project.
+- **Reviewed:** 2026-11-13
+
+See [EXTERNAL-RESOURCES/UNSLOP.md](EXTERNAL-RESOURCES/UNSLOP.md) for the focused record and usage notes.
