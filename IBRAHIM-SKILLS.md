@@ -98,3 +98,35 @@ When starting or improving a website:
 ## Changelog
 
 - **Initial version:** Created the Prime Skills Developer reference library and recorded Ibrahim's original seven-item collection pending source verification.
+
+---
+
+## External Skills & Website Resources
+
+This section tracks useful external collections and selected resources without mixing third-party libraries, prompts, and installable Agent Skills.
+
+### Tencent EdgeOne — Website Prompts & Skills
+
+- **Source:** https://github.com/TencentEdgeOne/awesome-website-prompts-and-skills
+- **Collection type:** Community website-resource gallery maintained by Tencent EdgeOne.
+- **Source README count at review:** 50 Skill entries + 116 Prompt entries.
+- **Full index and evaluation:** [EXTERNAL-RESOURCES/TENCENT-EDGEONE-CATALOG.md](EXTERNAL-RESOURCES/TENCENT-EDGEONE-CATALOG.md)
+- **Reviewed:** 2026-11-13
+
+#### Selected resources for our core workflow
+
+| Resource | Category | Why we keep it | Stack / limitation |
+|---|---|---|---|
+| [Tech Stack Analyzer](https://github.com/nitai2plipala/tech-stack-analyzer) | Agent skill | Inspect unfamiliar repositories and understand architecture and dependencies before editing. | Broad analysis; PHP-specific detection must be checked. MIT. |
+| [Website Skeleton Skill](https://github.com/liuboacean/website-skeleton-skill) | Agent skill / project scaffold | Reference for modular authentication, admin, AI, and full-stack application architecture. | Next.js + EdgeOne Pages; adapt concepts, not a direct PHP/XAMPP install. MIT No Attribution badge in source README. |
+| [PortfolioFlow](https://github.com/xixi241225-crypto/portfolio-flow) | Agent skill / project generator | Reference for themes, polished pages, admin dashboard, JWT, analytics, and AI assistant patterns. | EdgeOne Pages + Edge Functions + KV; adapt UI/product patterns only. MIT. |
+| [Academic Hub Skills](https://github.com/zixilee666-svg/academic-hub-skills-v1) | Agent skill / educational project generator | Educational-product reference for project management, progress charts, themes, AI-assisted academic workflows, and admin views. | React 19 + TypeScript + Vite + Tailwind; not a drop-in for PHP. MIT. |
+
+#### Adoption rules
+
+1. Tech Stack Analyzer is the first-choice helper when reviewing an unfamiliar repository.
+2. Use Website Skeleton and PortfolioFlow as architecture/UI references only when their runtime and deployment assumptions fit.
+3. Use Academic Hub as an educational-product feature reference; translate suitable patterns into the target stack.
+4. Do not add EdgeOne-specific deployment or storage requirements to projects that use another host or database.
+5. Keep source links, license details, and attribution requirements with every adopted resource.
+6. The complete 50-entry source index is maintained separately; entries are not all verified installable packages.
