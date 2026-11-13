@@ -175,3 +175,89 @@ See [EXTERNAL-RESOURCES/UNSLOP.md](EXTERNAL-RESOURCES/UNSLOP.md) for the focused
 - **Reviewed:** 2026-11-13
 
 **Standing instruction:** Treat Scrolltide as a preferred inspiration source whenever Ibrahim requests UI/UX motion or animation work. Browse its current examples if available, then implement an original, project-compatible adaptation rather than blindly copying assets or code.
+
+
+## Frontend Design, Motion & Video Production Collection
+
+These resources were selected by Ibrahim and reviewed on 2026-11-13. They are deliberately separated by purpose: frontend visual design, motion-design principles, cinematic video production, React-based video creation, and HTML-to-video rendering. Listing them here does not mean they are installed or connected.
+
+### Frontend Design — Anthropic Skills
+
+- **Category:** Agent Skill — frontend visual design and UI direction.
+- **Repository:** https://github.com/anthropics/skills
+- **Skill file:** https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md
+- **Purpose:** Creates distinctive, intentional interfaces by grounding visual choices in the product and audience; covers typography, palette, layout, content, critique, responsive quality, accessibility, and restrained motion.
+- **Workflow:** Prepare a compact design plan (color, typography, layout, principles), critique it against the brief for generic patterns, then implement.
+- **Best use:** New website/page design, redesigns, visual direction, and avoiding generic AI-generated layouts.
+- **Compatibility:** Primarily design guidance; can inform React, Vue, and PHP-rendered HTML/CSS. It does not require a specific frontend runtime by itself.
+- **License:** No root `LICENSE` file was found at the checked repository path; verify the applicable terms before copying or redistributing skill content.
+- **Adoption status:** Reference added; not installed.
+- **Reviewed:** 2026-11-13
+
+### Motion Design with Claude and Codex — LobzyJay
+
+- **Category:** Agent Skills — motion-design principles, After Effects, Blender, and motion critique.
+- **Repository:** https://github.com/LobzyJay/motion-design-with-claude-and-codex
+- **Foundation skill:** https://github.com/LobzyJay/motion-design-with-claude-and-codex/blob/main/skills/motion-design/SKILL.md
+- **Specialist skills:** `aftereffects-motion`, `blender-motion`, and `motion-design-critique`.
+- **Purpose:** Teaches motion timing, spacing, easing, anticipation, follow-through, composition, and critique; specialist workflows cover After Effects scripting/MCP and Blender animation.
+- **Best use:** Motion graphics, title sequences, product animation, 3D scenes, and evaluating animation craft.
+- **Important scope limit:** The repository explicitly says web motion (GSAP, Framer Motion, R3F) is out of scope. For website interactions, use Scrolltide and web-animation tools instead.
+- **Optional integrations:** After Effects MCP and Blender MCP; these require separate local setup and running applications. Skills can still be used as reference without those MCP servers.
+- **Installation:** Follow the repository's current instructions; Codex skill files are provided in the repo. Do not claim MCP control until the corresponding local server is installed and connected.
+- **License:** MIT.
+- **Adoption status:** Reference added; not installed and no local AE/Blender MCP configured.
+- **Reviewed:** 2026-11-13
+
+### Video Shotcraft — Vincentwei1021
+
+- **Category:** Agent Skill and production toolkit — cinematic product-video workflow.
+- **Repository:** https://github.com/Vincentwei1021/video-shotcraft
+- **Skill entry:** https://github.com/Vincentwei1021/video-shotcraft/blob/main/SKILL.md
+- **Purpose:** Creates cinematic product promos from frontend projects or webpages using real page captures, shot recipe cards, storyboards, Remotion demos/templates, music beat-sync, sound design, and quality review.
+- **Library contents stated by source:** 124 shot recipe cards, demo implementations, motion-preview gallery, a complete video template, reusable components, and sound/music workflows.
+- **Best use:** Promotional videos for websites/apps, feature walkthroughs, product launches, and individual cinematic shots or sound-design work.
+- **Workflow:** Understand the product, define visual direction, map features to shots, storyboard, capture assets, implement shots, design sound, and perform independent final review. The source offers direct-template, autonomous, and guided-creation modes.
+- **Requirements / compatibility:** Remotion-based production workflow; check the current README and project setup for Node, browser, FFmpeg, and rendering prerequisites. Some optional JianYing export tooling is marked Mac-tested / Windows-untested in the repository; do not assume that optional path works on Windows.
+- **License:** Apache-2.0.
+- **Adoption status:** Reference added; not installed or run.
+- **Reviewed:** 2026-11-13
+
+### Remotion Agent Skills — remotion-dev
+
+- **Category:** Agent Skills for the Remotion video framework.
+- **Repository:** https://github.com/remotion-dev/skills
+- **Documentation:** https://www.remotion.dev/docs/ai/skills
+- **Install command documented by source:** `npx skills add remotion-dev/skills`
+- **Purpose:** Official skills for creating Remotion projects and compositions, writing React-based video markup, previewing in Studio, rendering, maps, captions, SaaS integrations, interactivity, documentation lookup, licensing, and upgrades.
+- **Best use:** Programmatic video creation with React, animated explainers, product promos, captions, data/map animations, and automated video pipelines.
+- **Compatibility:** Requires a React/Remotion project and its supported Node/browser/rendering environment. It is not a drop-in animation library for a plain PHP page.
+- **License note:** No root `LICENSE` file was found at the checked skills repository path. Check the skills repository terms and the separate Remotion framework licensing requirements before commercial rendering or redistribution; do not assume the framework is unrestricted.
+- **Adoption status:** Reference added; not installed.
+- **Reviewed:** 2026-11-13
+
+### HyperFrames — heygen-com
+
+- **Category:** Open-source HTML-to-video framework, CLI, desktop editor, and Agent Skills.
+- **Repository:** https://github.com/heygen-com/hyperframes
+- **Documentation:** https://hyperframes.heygen.com/introduction
+- **Quick start:** https://hyperframes.heygen.com/quickstart
+- **Skill entry:** https://github.com/heygen-com/hyperframes/blob/main/skills/hyperframes/SKILL.md
+- **Purpose:** Turns HTML, CSS, media, and deterministic seekable animations into MP4 video; includes a CLI, editable Studio workflow, component/transition registry, and skills for coding agents.
+- **Best use:** Product promos, animated explainers, kinetic typography, charts/maps, social clips, overlays, and reusable motion graphics.
+- **Requirements stated by source:** Node.js 22+ and FFmpeg for CLI use.
+- **Important implementation rule:** Every rendered frame must be deterministic; the skill forbids timers, live network fetches, unseeded randomness, and non-seekable animation behavior in the render timeline.
+- **Compatibility:** HTML/CSS/JS video compositions; distinct from a normal website animation runtime. It can reuse web-development skills and concepts, but its output is video rather than an interactive website.
+- **License:** Apache-2.0 for the repository.
+- **Adoption status:** Reference added; not installed or connected.
+- **Reviewed:** 2026-11-13
+
+### Selection rules for future work
+
+1. **Designing a website UI:** start with Frontend Design; use Unslop for auditing/refinement.
+2. **Animating a website:** use Scrolltide for inspiration and web-native tools such as GSAP/Framer Motion; do not use the Blender/After Effects skill as a web-animation implementation guide.
+3. **Motion graphics / 3D animation:** use Motion Design with Claude and Codex, with After Effects or Blender specialists as appropriate.
+4. **Making a product promo from an existing website:** consider Video Shotcraft for its shot library and production pipeline.
+5. **Creating a video directly with React:** use Remotion Agent Skills.
+6. **Creating a video from HTML/CSS compositions:** use HyperFrames.
+7. Before installing or running any resource, inspect the actual project stack, operating system, dependencies, current upstream instructions, and license. Never install every tool just because it is listed here.
