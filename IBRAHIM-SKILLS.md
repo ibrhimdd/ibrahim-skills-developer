@@ -150,3 +150,28 @@ This section tracks useful external collections and selected resources without m
 - **Reviewed:** 2026-11-13
 
 See [EXTERNAL-RESOURCES/UNSLOP.md](EXTERNAL-RESOURCES/UNSLOP.md) for the focused record and usage notes.
+
+
+### Scrolltide — UI/UX, Motion Design & Interaction Reference
+
+- **Category:** Design Resource Library — not an Agent Skill, framework, or standalone website builder.
+- **Official website:** https://www.scrolltide.co/
+- **Library:** https://www.scrolltide.co/templates
+- **MCP documentation:** https://www.scrolltide.co/mcp
+- **Purpose:** Reference library for scroll-driven website templates, animated components, page sections, UI screens, 3D scenes, and shader backgrounds. Use it to discover motion concepts and interaction patterns, then adapt suitable ideas to the current project.
+- **Technology ecosystem shown by the source:** React, Vite, Next.js, Tailwind, Framer Motion, GSAP, Three.js, WebGL, shaders, and Lenis.
+- **MCP endpoint:** `https://www.scrolltide.co/api/mcp`; official instructions say it supports Claude, Cursor, Codex, and VS Code, with browser-based account approval and no API key. Access is limited to Yearly and Lifetime plans; fair use is up to 40 different items per account per 24 hours; MCP access is read-only.
+- **Motion workflow for Ibrahim's projects:**
+  1. When Ibrahim asks for animations, motion, transitions, scroll effects, micro-interactions, or a more dynamic UI, consult Scrolltide's current library when access is available.
+  2. Find relevant examples by page purpose and interaction type (e.g. hero reveal, scroll-scrubbed storytelling, parallax, animated cards, navigation transitions, hover/cursor response, 3D scenes, shader backgrounds).
+  3. Present or explain the selected motion direction when design approval is useful; do not copy a whole template blindly.
+  4. Recreate/adapt the underlying idea to the actual project's framework, dependencies, visual identity, RTL layout, accessibility, and performance budget.
+  5. Prefer restrained, purposeful motion; support reduced-motion preferences and avoid adding heavy WebGL/3D effects where they harm mobile performance.
+  6. Verify the finished interaction on desktop and mobile and check scroll behavior, keyboard usability, and reduced-motion behavior.
+- **Stack compatibility:** Scrolltide prompts are primarily designed for AI coding workflows and modern web stacks. For PHP/XAMPP projects, use the visual/motion concept and translate the implementation into the existing HTML/CSS/JavaScript stack; do not assume React/Next.js code can be pasted directly into PHP.
+- **License and usage:** The official Terms state that generated websites may be used, deployed, and monetized for personal or client work, but the source templates/prompts and marketing assets must not be redistributed or resold as standalone products or used to build a competing template/prompt library. Review current terms before paid or commercial adoption.
+- **Plans / access note (reviewed 2026-11-13):** Official pages describe Monthly, Yearly, and Lifetime plans; MCP is included with Yearly and Lifetime only. Pricing and entitlements can change; confirm the live pricing page before purchase. Do not imply Ibrahim has purchased a plan or connected MCP.
+- **Adoption status:** Saved as a design and motion reference. Not purchased, installed, or connected to this ChatGPT session.
+- **Reviewed:** 2026-11-13
+
+**Standing instruction:** Treat Scrolltide as a preferred inspiration source whenever Ibrahim requests UI/UX motion or animation work. Browse its current examples if available, then implement an original, project-compatible adaptation rather than blindly copying assets or code.
