@@ -261,3 +261,38 @@ These resources were selected by Ibrahim and reviewed on 2026-11-13. They are de
 5. **Creating a video directly with React:** use Remotion Agent Skills.
 6. **Creating a video from HTML/CSS compositions:** use HyperFrames.
 7. Before installing or running any resource, inspect the actual project stack, operating system, dependencies, current upstream instructions, and license. Never install every tool just because it is listed here.
+
+
+## Agent Skills — First-Party Workflows
+
+This repository now includes first-party Agent Skills maintained for Ibrahim's recurring development and creative workflows. The skills follow the Agent Skills directory convention: each skill has its own folder and a `SKILL.md` with YAML frontmatter (`name` and `description`).
+
+**Skill catalog:** [skills/README.md](skills/README.md)
+
+| Skill | Directory | Main purpose |
+|---|---|---|
+| PHP/XAMPP LMS Development | `skills/php-xampp-lms-development/` | Maintain and extend PHP/MySQL educational platforms safely |
+| Arabic RTL Frontend Design | `skills/arabic-rtl-frontend-design/` | Build readable, accessible Arabic-first responsive interfaces |
+| Web Motion Design | `skills/web-motion-design/` | Select and implement purposeful website motion |
+| Repository Review & Testing | `skills/repository-review-testing/` | Inspect existing code, make safe changes, and verify fixes |
+| Video Production Workflow | `skills/video-production-workflow/` | Choose and validate product-video and motion-graphics workflows |
+
+### How to use these skills
+
+1. Give the agent access to this repository or copy the relevant skill directory into a location supported by the agent/client.
+2. Ask the agent to use the relevant skill for the task.
+3. The agent should read the complete `SKILL.md` before planning or editing.
+4. Check the target project's stack, operating system, dependencies, and license before installing external tools.
+5. Treat these files as workflow instructions, not as proof that any tool, package, MCP server, or integration is installed.
+
+### Standard and maintenance
+
+- Format reference: https://agentskills.io/specification
+- Creation guide: https://agentskills.io/skill-creation/quickstart
+- Best practices: https://agentskills.io/skill-creation/best-practices
+- Keep skill names lowercase and hyphenated, matching their directory names.
+- Keep descriptions specific enough for an agent to identify when the skill applies.
+- Add scripts, references, and assets only when they materially improve the workflow; document their purpose and requirements.
+- Test each skill against representative tasks and revise it when instructions are ambiguous or ineffective.
+- Review external source instructions and licenses whenever referenced tools change.
+
